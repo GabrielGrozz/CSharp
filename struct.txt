@@ -1,0 +1,4 @@
+struct - é um tipo um tipo de dado que armazena outros dados, é como uma classe, porém mais simples e menos complexa.
+diferente da classe onde as coisas irão ficar armazenadas no heap, aqui ela fica armazenada na stack, sendo assim não é necessário instanciar uma strutura, mas simplesmente chama-la normalmente
+podemos armazenar tanto valores a métodos. Temos como exemplo de struct o int.
+é melhor usala em projetos menos complexos, para projeto smais complexos é melhor utilizarmos uma class mesmo.
