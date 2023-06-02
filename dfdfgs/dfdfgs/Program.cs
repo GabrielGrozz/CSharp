@@ -1,27 +1,45 @@
 ﻿using dfdfgs;
+using System.Runtime.InteropServices;
 
 namespace Course
 {
+    struct Carro
+    {
+        //dados da struct
+        public string Marca;
+        public int Ano;
+        public string Cor;
+
+        //construtor
+        public Carro( string Marca, int Ano, string Cor)
+        {
+            this.Marca = Marca;
+            this.Ano = Ano;
+            this.Cor = Cor;
+        }
+
+        //método
+        public void Info()
+        {
+            Console.WriteLine(this.Marca);
+            Console.WriteLine(this.Ano);
+            Console.WriteLine(this.Cor);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            string name = Console.ReadLine();
-            int yearOld = int.Parse(Console.ReadLine());
-            Person pessoa1 = new Person(name, yearOld);
+            Carro carroNovo;
+            carroNovo.Marca = "honda";
+            carroNovo.Ano = 2010;
+            carroNovo.Cor = "Preto";
 
-            string name2 = Console.ReadLine();
-            int yearOld2 = int.Parse(Console.ReadLine());
-            Person pessoa2 = new Person(name2, yearOld2);
+            Console.WriteLine(carroNovo.Marca);
+            Console.WriteLine(carroNovo.Ano);
+            Console.WriteLine(carroNovo.Cor);
 
-            if (pessoa1.YeOld > pessoa2.YeOld)
-            {
-                Console.WriteLine("mais velho: " + pessoa1.Name);
-            }
-            else
-            {
-                Console.WriteLine("mais velho: " + pessoa2.Name); ;
-            }
+            carroNovo.Info();
 
 
         }
