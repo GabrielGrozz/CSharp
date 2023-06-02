@@ -13,11 +13,12 @@ namespace Course
         static void Main(string[] args)
         {
             //aqui instanciamos um pedido passando os valores
-            Order novoPedido = new Order
+            Order novoPedido = new Order()
             {
                 Id = 155,
                 Moment = DateTime.Now,
                 //aqui usamos o enum do OrderStatus
+                //ele é auxiliado pelo compilador na hora de selecionarmos o status
                 Status = OrderStatus.PendingPayment
             };
 

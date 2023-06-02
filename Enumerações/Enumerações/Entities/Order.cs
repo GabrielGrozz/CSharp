@@ -13,7 +13,7 @@ using Enumerações.Entities.Enums;
 namespace Enumerações.Entities
 {
     internal class Order
-    //esse seria uma representação de um pedido onde usaremos um enum
+    //esse seria uma representação de uma classe de pedido onde usaremos um enum
     {
 
         public int Id { get; set; }
