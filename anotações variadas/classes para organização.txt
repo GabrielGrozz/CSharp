@@ -4,6 +4,8 @@ views - telas do sistema
 controllers - faz a conexão entre as telas e o sistema
 entities - produtos, cliente...
 repositories - responsável por acessar um banco de dados
+services - salvar, pesquisar, deletar, editar...
+
 
 
 
